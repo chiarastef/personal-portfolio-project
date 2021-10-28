@@ -1,4 +1,36 @@
-h1 {
-  background-color: aquamarine;
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+:root {
+  --primary-colour: #d7acd4;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* hero */
+.hero {
+  margin-top: 100px;
+}
+
+.hero h1 {
+  font-size: 63px;
+  font-weight: 500;
+  line-height: 70px;
+  margin-top: 75px;
+  margin-bottom: 0;
+}
+
+.hero h3 {
+  font-size: 23px;
+  opacity: 0.7;
+  margin-top: 8px;
+}
+
+.hero .btn {
+  background-color: var(--primary-colour);
+  font-weight: 500;
+  padding: 10px 40px;
+  margin-top: 25px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
