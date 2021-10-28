@@ -13,24 +13,52 @@ body {
   margin-top: 100px;
 }
 
-.hero h1 {
+.hero-title h1 {
   font-size: 63px;
   font-weight: 500;
   line-height: 70px;
-  margin-top: 75px;
+  margin-top: 70px;
   margin-bottom: 0;
 }
 
-.hero h3 {
+.hero-title h3 {
   font-size: 23px;
   opacity: 0.7;
   margin-top: 8px;
 }
 
-.hero .btn {
+.hero-title .btn {
+  display: inline-block;
   background-color: var(--primary-colour);
   font-weight: 500;
   padding: 10px 40px;
   margin-top: 25px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 1200px) {
+  .hero-title h1 {
+    font-size: 55px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    text-align: center;
+  }
+
+  .hero {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-title h1 {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .hero-title h3 {
+    font-size: 18px;
+  }
 }
