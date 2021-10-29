@@ -3,6 +3,7 @@
 :root {
   --primary-colour: #d7acd4;
   --secondary-colour: #d7acd466;
+  --box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -39,7 +40,7 @@ h3 {
   background-color: var(--primary-colour);
   font-weight: 500;
   padding: 10px 40px;
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: var(--box-shadow);
 }
 
 /* About me section */
@@ -50,6 +51,29 @@ h3 {
 .about-me-paragraph {
   text-align: end;
   padding: 60px 25px 0px 180px;
+}
+
+/* Recent project section */
+.recent-projects .row {
+  justify-content: space-evenly;
+}
+
+.recent-projects .card {
+  border: 2px solid var(--secondary-colour);
+  box-shadow: var(--box-shadow);
+}
+
+.recent-projects .card:hover {
+  border-width: 3.5px;
+}
+
+.recent-projects .card a {
+  color: #000;
+  text-decoration: none;
+}
+
+.recent-projects .card-body {
+  text-align: center;
 }
 
 /* Small */
@@ -91,6 +115,7 @@ h3 {
 
   h2 {
     font-size: 35px;
+    text-align: center;
   }
 }
 
