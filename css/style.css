@@ -31,9 +31,18 @@ h3 {
   box-shadow: var(--box-shadow);
 }
 
+/* Navbar */
+.navbar {
+  background-color: var(--primary-colour);
+}
+
+.navbar-brand img {
+  width: 180px;
+}
+
 /* Hero section*/
 .hero {
-  margin-top: 80px;
+  margin-top: 60px;
 }
 
 .hero-title h1 {
