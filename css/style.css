@@ -109,9 +109,18 @@ section.title {
   text-align: center;
 }
 
-/* About me section */
-section.about-me {
+/* About me and work inquiry sections */
+section.about-me,
+section.work-inquiry {
   background-color: var(--secondary-colour);
+}
+
+.work-inquiry .work-inquiry-text {
+  padding-right: 95px;
+}
+
+.work-inquiry .work-inquiry-img {
+  width: 65%;
 }
 
 /* Footer */
@@ -169,11 +178,16 @@ footer .attribution a {
     font-size: 19px;
   }
 
+  p {
+    text-align: center;
+  }
+
   .hero {
     margin-top: 0;
   }
 
-  .home-about-me img {
+  .home-about-me img,
+  .about-me img {
     display: block;
     width: 45%;
     margin: auto;
@@ -186,6 +200,23 @@ footer .attribution a {
 
   .submit-button button {
     width: 100%;
+  }
+
+  section.title {
+    margin-top: 40px;
+  }
+
+  .about-me img {
+    margin-bottom: 20px;
+  }
+
+  .projects-text h2 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+
+  .work-inquiry .work-inquiry-text {
+    padding-right: 0;
   }
 }
 
@@ -231,8 +262,14 @@ footer .attribution a {
     font-size: 17px;
   }
 
-  .home-about-me img {
+  .home-about-me img,
+  .about-me img {
     width: 60%;
+  }
+
+  section.title {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   footer i {
