@@ -77,10 +77,10 @@
     <section class="hero pb-5">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 hero-title">
+          <div class="col-lg-8 home-hero-title">
             <h1>
               Hello, <br />
-              I’m Chiara Stefanelli
+              I'm Chiara Stefanelli
             </h1>
             <h3 class="mt-2">Front-end developer student based in Italy</h3>
             <a href="#" class="btn mt-4" title="Contact me">Contact me</a>
@@ -96,21 +96,21 @@
       </div>
     </section>
 
-    <section class="home-about-me pt-5 pb-5">
+    <section class="secondary-background pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <img
               src="/images/chiara-stefanelli.png"
               alt="Chiara Stefanelli"
-              class="img-fluid"
+              class="img-fluid chiaras-img"
             />
           </div>
           <div class="col-lg-8">
             <div class="home-about-me-paragraph">
-              <h2>About me</h2>
+              <h2>About Chiara</h2>
               <p>
-                I am a Front-end developer student with a Bachelor's degree in
+                I am a front-end developer student with a Bachelor's degree in
                 Foreign Languages and a great passion for information technology
                 and foreign cultures.
               </p>
@@ -123,78 +123,87 @@
       </div>
     </section>
 
-    <section class="recent-projects pt-5 pb-5">
+    <section class="pt-5 pb-5">
       <div class="container">
         <h2 class="mb-4">My recent projects</h2>
-        <div class="row">
+        <div class="row justify-content-evenly">
           <div class="card" style="width: 18rem">
-            <a
-              href="https://sharp-clarke-ad32c6.netlify.app"
-              target="_blank"
-              title="Weather Website"
-            >
-              <img
-                src="/images/weather-website.png"
-                class="card-img-top"
-                alt="Weather website"
-              />
+            <img
+              src="/images/weather-website.png"
+              class="card-img-top"
+              alt="Weather website"
+            />
 
-              <div class="card-body">
-                <h5 class="card-title">Weather Website</h5>
-                <p class="card-text">
-                  Final Project from the SheCodes Plus workshop.
-                </p>
-              </div>
-            </a>
+            <div class="card-body">
+              <h5 class="card-title">Weather Website</h5>
+              <p class="card-text">
+                Final Project from the SheCodes Plus workshop.
+              </p>
+              <a
+                href="https://sharp-clarke-ad32c6.netlify.app"
+                class="btn"
+                target="_blank"
+                title="Launch Weather Website"
+                >Launch</a
+              >
+            </div>
           </div>
 
           <div class="card mt-3 mt-md-0" style="width: 18rem">
-            <a
-              href="https://chiarastef.github.io/freeCodeCamp-projects/responsive-web-design/project-3/"
-              target="_blank"
-              title="Product Landing Page"
-            >
-              <img
-                src="/images/landing-page.png"
-                class="card-img-top"
-                alt="Product Landing Page"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Product Landing Page</h5>
-                <p class="card-text">Project from freeCodeCamp.</p>
-              </div>
-            </a>
+            <img
+              src="/images/landing-page.png"
+              class="card-img-top"
+              alt="Product Landing Page"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Product Landing Page</h5>
+              <p class="card-text">Project from freeCodeCamp.</p>
+              <a
+                href="https://chiarastef.github.io/freeCodeCamp-projects/responsive-web-design/project-3/"
+                class="btn"
+                target="_blank"
+                title="Launch Product Landing Page"
+                >Launch</a
+              >
+            </div>
           </div>
 
           <div class="card mt-3 mt-lg-0" style="width: 18rem">
-            <a
-              href="https://chiarastef.github.io/freeCodeCamp-projects/responsive-web-design/project-2/"
-              target="_blank"
-              title="Survey Form"
-            >
-              <img
-                src="/images/survey-page.png"
-                class="card-img-top"
-                alt="Survey Form"
-              />
-              <div class="card-body">
-                <h5 class="card-title">Survey Form</h5>
-                <p class="card-text">Project from freeCodeCamp.</p>
-              </div>
-            </a>
+            <img
+              src="/images/survey-page.png"
+              class="card-img-top"
+              alt="Survey Form"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Survey Form</h5>
+              <p class="card-text">Project from freeCodeCamp.</p>
+              <a
+                href="https://chiarastef.github.io/freeCodeCamp-projects/responsive-web-design/project-2/"
+                class="btn"
+                target="_blank"
+                title="Launch Survey Form"
+                >Launch</a
+              >
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="get-in-touch pt-5 pb-5">
+    <section class="get-in-touch secondary-background pt-5 pb-5">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <h2>Get in touch!</h2>
             <h3>
               Or send me an
-              <a href="emailto:chiarastefanelli27@gmail.com"> email</a>.
+              <a
+                href="emailto:chiarastefanelli27@gmail.com"
+                title="Send me an Email"
+                class="link"
+              >
+                email</a
+              >.
             </h3>
           </div>
           <div class="col-lg-8 pt-3 pt-lg-4">
@@ -241,9 +250,9 @@
                   ></textarea>
                 </div>
               </div>
-              <div class="row mt-3 submit-button">
+              <div class="row mt-3 text-end">
                 <div class="col-12">
-                  <button type="submit" class="btn">Send</button>
+                  <button type="submit" class="btn submit-button">Send</button>
                 </div>
               </div>
             </form>
@@ -296,10 +305,11 @@
                 </a>
               </li>
             </ul>
-            <div class="attribution mt-1">
+            <div class="attribution mt-2">
               <a
                 href="https://github.com/chiarastef/portfolio-project"
                 target="_blank"
+                class="link"
                 >Open-source code</a
               >
               by Chiara Stefanelli
