@@ -40,9 +40,11 @@ h3 {
 }
 
 .card {
+  width: 22rem;
   border: 2px solid var(--secondary-colour);
   box-shadow: var(--box-shadow);
   text-align: center;
+  margin: auto;
 }
 
 .link {
@@ -76,13 +78,22 @@ h3 {
   padding: 60px 25px 0px 180px;
 }
 
-/* ABOUT PAGE - About me and work inquiry sections */
+/* ABOUT PAGE - Work inquiry sections */
 .work-inquiry-text {
   padding-right: 95px;
 }
 
 .work-inquiry-img {
   width: 65%;
+}
+
+/* PROJECT PAGE - Projects section */
+.projects .card {
+  border-color: var(--primary-colour);
+}
+
+.projects p {
+  height: 48px;
 }
 
 /* Footer */
@@ -109,6 +120,9 @@ footer .attribution {
 
 /* X-Large */
 @media (max-width: 1200px) {
+  .projects .card {
+    width: 25rem;
+  }
 }
 
 /* Large */
@@ -165,7 +179,12 @@ footer .attribution {
   }
 
   .work-inquiry-text {
+    padding-left: 0;
     padding-right: 0;
+  }
+
+  .projects .card {
+    width: 22rem;
   }
 }
 
@@ -181,6 +200,10 @@ footer .attribution {
 
   p {
     font-size: 15px;
+  }
+
+  .projects .card {
+    width: 90%;
   }
 
   footer,
