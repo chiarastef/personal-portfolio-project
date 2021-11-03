@@ -58,16 +58,6 @@ h3 {
   margin: auto;
 }
 
-.link {
-  color: #be5fb8;
-  text-decoration: none;
-}
-
-.link:hover {
-  color: #be5fb8;
-  text-decoration: underline;
-}
-
 /* Navbar */
 .navbar {
   background-color: var(--primary-colour);
@@ -95,6 +85,16 @@ form {
 ul i {
   font-size: 30px;
   color: #0000008c;
+  background-color: #f9f7fe;
+  padding: 8px 10px;
+  border-radius: 50%;
+  transition: all 100ms ease-in-out;
+}
+
+ul i:hover,
+.social-links:hover i {
+  color: #f9f7fe;
+  background-color: #0000008c;
 }
 
 /* Footer */
@@ -159,12 +159,16 @@ footer .attribution {
     border-top: 2px solid var(--secondary-colour);
   }
 
-  .submit-button {
-    width: 100%;
-  }
-
   .card {
     width: 22rem;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .submit-button {
+    width: 100%;
   }
 }
 
@@ -184,6 +188,10 @@ footer .attribution {
 
   .card {
     width: 90%;
+  }
+
+  form {
+    width: 100%;
   }
 
   footer,
