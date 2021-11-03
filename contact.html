@@ -57,9 +57,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="/about.html" title="About"
-                >About</a
-              >
+              <a class="nav-link" href="/about.html" title="About">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/projects.html" title="My Projects"
@@ -67,7 +65,7 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contact.html" title="Contact"
+              <a class="nav-link active" href="/contact.html" title="Contact"
                 >Contact</a
               >
             </li>
@@ -76,55 +74,104 @@
       </div>
     </nav>
 
-    <section class="hero text-center ps-3 pe-3 pb-4">
+    <section class="hero text-center pb-4">
       <div class="container">
-        <h1>Chiara Stefanelli</h1>
-        <h3>Front-developer student based in Italy</h3>
+        <h1>Contact me!</h1>
       </div>
     </section>
 
     <section>
       <div class="container secondary-border-top secondary-border-bottom">
-        <div
-          class="
-            row
-            flex-lg-row flex-column-reverse
-            justify-content-evenly
-            pt-4
-            pb-4
-            pt-md-5
-            pb-md-5
-          "
+        <form class="pt-5 pb-5">
+          <div class="row">
+            <div class="col-md-6 mt-3 mt-lg-0">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Name"
+                aria-label="Name"
+                required
+              />
+            </div>
+            <div class="col-md-6 mt-3 mt-lg-0">
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Email"
+                aria-label="Email"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Subject"
+                aria-label="Subject"
+                required
+              />
+            </div>
+          </div>
+          <div class="row mt-3">
+            <div class="col-12">
+              <textarea
+                class="form-control"
+                placeholder="Message"
+                aria-label="Message"
+                rows="6"
+                required
+              ></textarea>
+            </div>
+          </div>
+          <div class="row mt-3 text-center">
+            <div class="col-12">
+              <button type="submit" class="btn submit-button">Send</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="pt-4">
+      <div class="container secondary-border-bottom pb-4">
+        <ul
+          class="contact-links d-flex justify-content-evenly nav list-unstyled"
         >
-          <div class="col-lg-7 col-xl-6 pt-3 pt-lg-0 pt-xxl-3 text-center">
-            <p>
-              I am a recent graduate of the Carlo Bo University (Urbino, Italy),
-              where I studied Foreign Languages and Cultures, with a focus on
-              business.
-            </p>
-            <p>
-              In my last year of university, I discovered a new passion: web
-              development. So I started following some online courses from
-              freeCodeCamp, Coursera and SheCodes. I am currently attending the
-              SheCodes Responsive workshop, where I am learning how to make my
-              web pages more responsive. At the same time, I wanted to know more
-              about computer science, so I started following CS50's Introduction
-              to Computer Science from Harvard University on EdX.
-            </p>
-            <p class="mb-0">
-              Next year, I plan to move to Australia to obtain a Diploma in IT
-              (Web Development) to develop my knowledge and possibly do an
-              internship to gain real-life experience and new skills.
-            </p>
-          </div>
-          <div class="col-lg-4">
-            <img
-              src="/images/chiara-stefanelli-about-me.png"
-              alt="Chiara Stefanelli"
-              class="pt-lg-3 pt-xxl-0 chiaras-img"
-            />
-          </div>
-        </div>
+          <li>
+            <a
+              href="mailto:chiarastefanelli27@gmail.com"
+              title="Send me an email"
+              class="d-flex align-items-center text-decoration-none text-reset"
+            >
+              <i class="fas fa-envelope"></i
+              ><span class="ms-3">Send me an email</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/chiarastefanelli/?locale=en_US"
+              target="_blank"
+              title="Connect with me on LinkedIn"
+              class="d-flex align-items-center text-decoration-none text-reset"
+            >
+              <i class="fab fa-linkedin-in"></i
+              ><span class="ms-3">Connect with me on LinkedIn</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/chiarastef"
+              target="_blank"
+              title="Follow me on GitHub"
+              class="d-flex align-items-center text-decoration-none text-reset"
+            >
+              <i class="fab fa-github"></i
+              ><span class="ms-3">Follow me on GitHub</span>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
 
@@ -132,17 +179,17 @@
       <div class="container">
         <div class="row justify-content-evenly">
           <div class="col-lg-5 text-center mb-4 mb-lg-0">
+            <h2>Chiara Stefanelli</h2>
+            <h3>Front-developer student</h3>
+            <a href="/about.html" class="btn mt-2" title="About Chiara"
+              >About Chiara</a
+            >
+          </div>
+          <div class="col-lg-5 border-top-sm text-center pt-3 pt-lg-0">
             <h2>Portfolio</h2>
             <h3>What I've been working on</h3>
             <a href="/projects.html" class="btn mt-2" title="My projects"
               >My projects</a
-            >
-          </div>
-          <div class="col-lg-5 border-top-sm text-center pt-3 pt-lg-0">
-            <h2>Work inquiry</h2>
-            <h3>Let's work together</h3>
-            <a href="/contact.html" class="btn mt-2" title="Contact me"
-              >Contact me</a
             >
           </div>
         </div>

@@ -8,19 +8,20 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: #f9f7fe;
 }
 
 h1 {
-  font-size: 55px;
+  font-size: 53px;
   font-weight: 500;
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 38px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 19px;
   opacity: 0.7;
 }
 
@@ -31,12 +32,22 @@ h3 {
   box-shadow: var(--box-shadow);
 }
 
-.secondary-background {
-  background-color: var(--secondary-colour);
+.secondary-border-top {
+  border-top: 2px solid var(--secondary-colour);
+}
+
+.secondary-border-bottom {
+  border-bottom: 2px solid var(--secondary-colour);
 }
 
 .hero {
-  margin-top: 60px;
+  margin-top: 55px;
+}
+
+.chiaras-img {
+  display: block;
+  width: 80%;
+  margin: auto;
 }
 
 .card {
@@ -66,44 +77,34 @@ h3 {
   width: 180px;
 }
 
-/* HOME - Hero section*/
-.home-hero-title h1 {
-  margin-top: 70px;
-  margin-bottom: 0;
-}
-
-/* HOME - About me section */
-.home-about-me-paragraph {
-  text-align: end;
-  padding: 60px 25px 0px 180px;
-}
-
-/* ABOUT PAGE - Work inquiry sections */
-.work-inquiry-text {
-  padding-right: 95px;
-}
-
-.work-inquiry-img {
-  width: 65%;
-}
-
 /* PROJECT PAGE - Projects section */
-.projects .card {
-  border-color: var(--primary-colour);
-}
-
 .projects p {
   height: 48px;
 }
 
-/* Footer */
-footer img {
-  width: 80%;
+/* CONTACT PAGE - form */
+form {
+  width: 70%;
+  margin: auto;
 }
 
-footer i {
+.submit-button {
+  width: 40%;
+}
+
+ul i {
   font-size: 30px;
   color: #0000008c;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  border-top: 2px solid var(--secondary-colour);
+}
+
+footer img {
+  width: 70%;
 }
 
 footer .attribution {
@@ -111,24 +112,20 @@ footer .attribution {
   text-align: end;
 }
 
-/* XX-Large */
-@media (min-width: 1400px) {
-  .home-about-me-paragraph {
-    padding-left: 250px;
-  }
-}
-
 /* X-Large */
 @media (max-width: 1200px) {
-  .projects .card {
+  .card {
     width: 25rem;
+  }
+
+  .chiaras-img {
+    width: 90%;
   }
 }
 
 /* Large */
 @media (max-width: 991.98px) {
-  .home-hero-title,
-  .home-about-me-paragraph,
+  h1,
   h2,
   h3 {
     text-align: center;
@@ -150,40 +147,23 @@ footer .attribution {
     text-align: center;
   }
 
-  .hero h1 {
-    margin-top: 0;
-  }
-
   .hero {
     margin-top: 40px;
   }
 
   .chiaras-img {
-    display: block;
     width: 45%;
-    margin: auto;
   }
 
-  .home-about-me-paragraph {
-    text-align: center;
-    padding: 30px 0 0;
+  .border-top-sm {
+    border-top: 2px solid var(--secondary-colour);
   }
 
   .submit-button {
     width: 100%;
   }
 
-  .projects-text {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
-  .work-inquiry-text {
-    padding-left: 0;
-    padding-right: 0;
-  }
-
-  .projects .card {
+  .card {
     width: 22rem;
   }
 }
@@ -202,7 +182,7 @@ footer .attribution {
     font-size: 15px;
   }
 
-  .projects .card {
+  .card {
     width: 90%;
   }
 
