@@ -64,7 +64,7 @@ h3 {
 }
 
 .navbar-brand img {
-  width: 180px;
+  max-width: 180px;
 }
 
 /* PROJECT PAGE - Projects section */
@@ -72,14 +72,11 @@ h3 {
   height: 48px;
 }
 
-/* CONTACT PAGE - form */
-form {
-  width: 70%;
+/* CONTACT PAGE */
+.contact-links {
+  width: fit-content;
   margin: auto;
-}
-
-.submit-button {
-  width: 40%;
+  font-size: 18px;
 }
 
 ul i {
@@ -110,6 +107,11 @@ footer img {
 footer .attribution {
   font-size: 12px;
   text-align: end;
+}
+
+footer .attribution a {
+  color: #be5fb8;
+  text-decoration: none;
 }
 
 /* X-Large */
@@ -162,14 +164,6 @@ footer .attribution {
   .card {
     width: 22rem;
   }
-
-  form {
-    width: 80%;
-  }
-
-  .submit-button {
-    width: 100%;
-  }
 }
 
 /* Medium */
@@ -188,10 +182,6 @@ footer .attribution {
 
   .card {
     width: 90%;
-  }
-
-  form {
-    width: 100%;
   }
 
   footer,
